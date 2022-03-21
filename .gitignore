@@ -1,0 +1,10 @@
+# parcel-bundler cache 
+.cache
+.parcel-cache
+
+# Node
+node_modules
+dist
+
+# Mac
+.DS_Store

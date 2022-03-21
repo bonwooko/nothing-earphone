@@ -1,0 +1,92 @@
+/*==================== FONT FACE ====================*/
+@font-face {
+  font-family: 'quaxiculo';
+  src: url('../font/Quaxiculo.ttf') format('truetype');
+}
+
+/*==================== Google Font ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+Mono:wght@300;400;500;600;700;800;900&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*===== Colors =====*/
+  --color-white: #fff;
+  --color-light-gray: #565656;
+  --color-dark-gray: #181715;
+  --color-black: #000;
+  --color-red: #d21314;
+
+  /*===== Font Family =====*/
+  --font-body: 'Noto Sans Mono', monospace;
+  --font-dot: 'quaxiculo';
+  --font-bold: 'Fredoka One', cursive;
+
+  /*===== Font Weight =====*/
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  /*===== Font Size =====*/
+  --big-fs: 2rem; /* 32px */
+  --h1-fs: 1.5rem; /* 24px */
+  --h2-fs: 1.25rem; /* 20px */
+  --h3-fs: 1.125rem; /* 18px */
+  --normal-fs: 0.938rem; /* 15px */
+  --small-fs: 0.813rem; /* 13px */
+  --smaller-fs: 0.75rem; /* 12px */
+
+  /*===== z-index =====*/
+  --z-1: 1;
+  --z-10: 10;
+  --z-100: 100;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-fs: 3rem; /* 48px */
+    --h1-fs: 2.25rem; /* 36px */
+    --h2-fs: 1.5rem; /* 24px */
+    --h3-fs: 1.25rem; /* 20px */
+    --normal-fs: 1rem; /* 16px */
+    --small-fs: 0.875rem; /* 14px */
+    --smaller-fs: 0.813rem; /* 13px */
+  }
+}
+
+/*==================== BASE ====================*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--normal-fs);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== CONTENTS ====================*/
+/*==================== MEDIA QUERIES ====================*/
