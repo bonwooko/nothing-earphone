@@ -73,6 +73,7 @@ html {
 body {
   font-family: var(--font-body);
   font-size: var(--normal-fs);
+  background-color: var(--color-white);
 }
 
 ul {
@@ -81,6 +82,7 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -89,4 +91,113 @@ img {
 }
 
 /*==================== CONTENTS ====================*/
-/*==================== MEDIA QUERIES ====================*/
+
+/*===== NAVBAR =====*/
+.header {
+  position: fixed;
+  width: 100vw;
+}
+.nav {
+  overflow: hidden;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: var(--color-white);
+}
+
+.nav__logo {
+  display: flex;
+  margin-left: 1rem;
+  font-family: var(--font-dot);
+  font-size: var(--h2-fs);
+}
+
+.nav__logo-text {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  color: var(--color-black);
+}
+
+.nav__shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 75vw;
+  height: 100vh;
+  background-color: var(--color-dark-gray);
+  font-size: var(--big-fs);
+  font-weight: var(--fw-semi-bold);
+  color: var(--color-white);
+  z-index: var(--z-10);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  height: 100vh;
+  gap: 4rem;
+  text-align: left;
+}
+
+.nav__link {
+  color: var(--color-white);
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.nav__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  gap: 1rem;
+  font-size: var(--h1-fs);
+}
+
+.nav__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* show menu */
+.show__menu {
+  right: 0;
+}
+
+.show__menu-shadow {
+  z-index: 1;
+  opacity: 1;
+}
+
+/*===== HOME =====*/
+
+/*==================== MEDIA QUERIES ====================*/ ;
