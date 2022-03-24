@@ -1,4 +1,4 @@
-import gsap from 'gsap';
+// import gsap from 'gsap';
 
 // ========== Nav menu toggle ==========
 const navMenu = document.getElementById('nav-menu');
@@ -15,5 +15,3 @@ navClose.addEventListener('click', () => {
   navMenu.classList.remove('show__menu');
   navShadow.classList.remove('show__menu-shadow');
 });
-
-// ========== Infinite Text Marquee ==========

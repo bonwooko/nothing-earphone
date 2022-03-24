@@ -95,6 +95,15 @@ img {
   max-width: 100%;
 }
 
+.button {
+  display: inline-block;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  font-size: var(--h3-fs);
+  font-weight: var(--fw-semi-bold);
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
 /*==================== CONTENTS ====================*/
 
 /*===== NAVBAR =====*/
@@ -282,13 +291,56 @@ img {
 
 /*===== PRODUCT =====*/
 .ear__one {
-  /* overflow: hidden; */
-  border: 1px solid red;
+  overflow: hidden;
 }
 
 .ear__container {
   display: flex;
   flex-direction: column;
+}
+
+.ear__content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+}
+
+.ear__title {
+  font-family: var(--font-dot);
+  font-size: var(--big-fs);
+  margin-bottom: 1.2rem;
+}
+
+.ear__subtitle {
+  font-family: var(--font-bold);
+  font-size: var(--h3-fs);
+  margin-bottom: 1rem;
+}
+
+.ear__paragraph {
+  font-size: var(--normal-fs);
+  line-height: 1.4;
+}
+
+.ear__btn {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.ear__btn:hover {
+  color: var(--color-red);
+}
+
+.ear__image-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  margin-bottom: 3rem;
+}
+.ear__image {
+  object-fit: cover;
+  object-position: 15% bottom;
+  height: 20rem;
 }
 
 /*===== Marquee =====*/
@@ -297,20 +349,20 @@ img {
 }
 
 .marquee-inner {
-  border: 1px solid green;
   display: flex;
   align-items: center;
   height: 3rem;
   font-family: var(--font-dot);
-  font-size: var(--h2-fs);
+  font-size: var(--h1-fs);
   color: var(--color-white);
   background-color: var(--color-red);
+
   animation: infiniteMarquee 5s linear infinite;
 }
 
 .marquee-text {
-  border: 1px solid blue;
   width: max-content;
+  letter-spacing: 4px;
 }
 
 .marquee-text::after {
@@ -323,5 +375,23 @@ img {
     transform: translateX(-100%);
   }
 }
+
+/*===== Youtube Video =====*/
+.video__container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*===== ABOUT US =====*/
 
 /*==================== MEDIA QUERIES ====================*/
