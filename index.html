@@ -8,7 +8,6 @@
     <!-- !----------More Set up ---------- -->
     <!--========== Open Graph ==========-->
     <!--========== Tweeter Card ==========-->
-    <!--========== Libraries ==========-->
     <!-- !---------------------------------- -->
     <!--========== Normalize CSS ==========-->
     <link
@@ -253,12 +252,66 @@
         </ul>
 
         <!-- newsletter -->
+        <div class="footer__newsletter">
+          <div class="footer__email-container">
+            <label for="newsletter" class="footer__newsletter-label"
+              >Newsletter</label
+            >
+            <div class="footer__email-inputs">
+              <input type="email" id="newsletter" placeholder="Email address" />
+              <button class="button footer__newsletter-btn">Send</button>
+            </div>
+          </div>
+
+          <div class="footer__checkbox-container">
+            <label class="footer__checkbox-wrap"
+              ><input
+                type="checkbox"
+                name="policy"
+                value="private-policy"
+                id="checkbox1"
+              />
+              <label for="checkbox1"></label>
+              <p class="checkbox__text">
+                You have read and agree to the terms in our
+                <a href="#"><u>Privacy Policy</u></a
+                >.
+              </p>
+            </label>
+            <label class="footer__checkbox-wrap"
+              ><input
+                type="checkbox"
+                name="policy"
+                value="marketing"
+                id="checkbox2"
+              />
+              <label for="checkbox2"></label>
+              <p class="checkbox__text">
+                You consent to receiving NOTHING marketing communications.
+              </p>
+            </label>
+          </div>
+        </div>
 
         <!-- social media -->
-        <!-- payment -->
+        <div class="footer__socialmedia-container">
+          <a href="#" class="footer__socialmedia"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#" class="footer__socialmedia"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+          <a href="#" class="footer__socialmedia"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" class="footer__socialmedia"
+            ><i class="bx bxl-tiktok"></i
+          ></a>
+        </div>
+
         <!-- copyright -->
-        <p class="copyright">
-          &copy; <span class="this-year"></span> Redesigned by Bonwoo Ko.
+        <p class="footer__copyright">
+          &copy; Redesigned by Bonwoo Ko. <span class="this__year"></span>.
         </p>
       </div>
     </footer>

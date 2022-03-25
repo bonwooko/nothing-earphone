@@ -18,8 +18,6 @@ navClose.addEventListener('click', () => {
 
 // ========== Footer Accordion Menu ==========
 const accordionToggles = document.querySelectorAll('.footer__list-title');
-const accordionIcons = document.querySelectorAll('.bx-chevron-down');
-const accordionItems = document.querySelectorAll('.footer__items');
 
 accordionToggles.forEach((list) => {
   list.addEventListener('click', () => {
@@ -33,3 +31,8 @@ function toggleAccordion(el) {
   icon.classList.toggle('icon-active');
   item.classList.toggle('active');
 }
+
+// ========== Footer year ==========
+const thisYear = document.querySelector('.this__year');
+
+thisYear.textContent = new Date().getFullYear();
