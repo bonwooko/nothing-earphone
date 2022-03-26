@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- !----------More Set up ---------- -->
+    <!--========== Open Graph ==========-->
+    <!--========== Tweeter Card ==========-->
+    <!-- !---------------------------------- -->
+    <!--========== Normalize CSS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--========== Favicon ==========-->
+    <link rel="icon" href="../../static/favicon.ico" />
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/about-us.css" />
+    <!--========== Icon ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--========== JavaScript ==========-->
+    <script defer type="module" src="../js/common.js"></script>
+    <script defer type="module" src="../js/about-us.js"></script>
+    <title>NOTHING</title>
+  </head>
+
+  <body>
+    <!--========== Header ==========-->
+    <header class="header" id="header">
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="../../index.html" class="nav__logo">
+          <div class="nav__logo-text">NOTHING</div>
+        </a>
+
+        <!-- Nav-menu -->
+        <div class="nav__shadow"></div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../../index.html" class="nav__link">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a href="../pages/ear-one.html" class="nav__link"
+                >ear<span>(1)</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../pages/about-us.html" class="nav__link">ABOUT US</a>
+            </li>
+          </ul>
+          <div class="nav__close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <!-- Nav-Button -->
+        <div class="nav__btns">
+          <div class="nav__icon" id="nav-cart">
+            <i class="bx bx-cart"></i>
+          </div>
+          <div class="nav__icon" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--========== Main ==========-->
+    <main class="main"></main>
+
+    <!--========== Footer ==========-->
+    <footer class="footer">
+      <div class="footer__content">
+        <!-- menu -->
+        <ul class="footer__menu">
+          <li class="footer__list footer__list-first">
+            <div class="footer__list-title">
+              <p>Product</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="footer__items">
+              <a href="../pages/ear-one.html">ear (1)</a>
+            </div>
+          </li>
+          <li class="footer__list">
+            <div class="footer__list-title">
+              <p>Company</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="footer__items">
+              <a href="../pages/about-us.html">About us</a>
+            </div>
+          </li>
+          <li class="footer__list">
+            <div class="footer__list-title">
+              <p>Support</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="footer__items">
+              <a href="https://us.nothing.tech/pages/faq">FAQ</a>
+            </div>
+          </li>
+          <li class="footer__list">
+            <div class="footer__list-title">
+              <p>ear (1) App</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="footer__items footer__items-app">
+              <a
+                href="https://us.nothing.tech/pages/ear-1-app-download"
+                class="footer__app"
+                >Android</a
+              >
+              <a
+                href="https://apps.apple.com/app/id1568033706"
+                class="footer__app"
+                >iOS</a
+              >
+            </div>
+          </li>
+        </ul>
+
+        <!-- newsletter -->
+        <div class="footer__newsletter">
+          <div class="footer__email-container">
+            <label for="newsletter" class="footer__newsletter-label"
+              >Newsletter</label
+            >
+            <div class="footer__email-inputs">
+              <input type="email" id="newsletter" placeholder="Email address" />
+              <button class="button footer__newsletter-btn">Send</button>
+            </div>
+          </div>
+
+          <div class="footer__checkbox-container">
+            <label class="footer__checkbox-wrap"
+              ><input
+                type="checkbox"
+                name="policy"
+                value="private-policy"
+                id="checkbox1"
+              />
+              <label for="checkbox1"></label>
+              <p class="checkbox__text">
+                You have read and agree to the terms in our
+                <a href="#"><u>Privacy Policy</u></a
+                >.
+              </p>
+            </label>
+            <label class="footer__checkbox-wrap"
+              ><input
+                type="checkbox"
+                name="policy"
+                value="marketing"
+                id="checkbox2"
+              />
+              <label for="checkbox2"></label>
+              <p class="checkbox__text">
+                You consent to receiving NOTHING marketing communications.
+              </p>
+            </label>
+          </div>
+        </div>
+
+        <!-- social media -->
+        <div class="footer__socialmedia-container">
+          <a
+            href="https://www.instagram.com/nothing/?hl=en"
+            class="footer__socialmedia"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/c/NothingTechnology"
+            class="footer__socialmedia"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+          <a href="https://twitter.com/nothing" class="footer__socialmedia"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@nothing.tech"
+            class="footer__socialmedia"
+            ><i class="bx bxl-tiktok"></i
+          ></a>
+        </div>
+
+        <!-- copyright -->
+        <p class="footer__copyright">
+          &copy; Redesigned by Bonwoo Ko. <span class="this__year"></span>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

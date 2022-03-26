@@ -20,6 +20,7 @@
     <!--========== Favicon ==========-->
     <link rel="icon" href="./static/favicon.ico" />
     <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./src/css/common.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <!--========== Icon ==========-->
     <link
@@ -27,6 +28,7 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <!--========== JavaScript ==========-->
+    <script defer type="module" src="./src/js/common.js"></script>
     <script defer type="module" src="./src/js/main.js"></script>
     <title>NOTHING</title>
   </head>
@@ -36,7 +38,7 @@
     <header class="header" id="header">
       <nav class="nav">
         <!-- Logo -->
-        <a href="#" class="nav__logo">
+        <a href="./index.html" class="nav__logo">
           <div class="nav__logo-text">NOTHING</div>
         </a>
 
@@ -45,13 +47,15 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">HOME</a>
+              <a href="./index.html" class="nav__link">HOME</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">ear<span>(1)</span></a>
+              <a href="./src/pages/ear-one.html" class="nav__link"
+                >ear<span>(1)</span></a
+              >
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">ABOUT US</a>
+              <a href="./src/pages/about-us.html" class="nav__link">ABOUT US</a>
             </li>
           </ul>
           <div class="nav__close">
@@ -102,8 +106,20 @@
               <div class="marquee-text">ear (1)</div>
               <div class="marquee-text">ear (1)</div>
               <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
             </div>
             <div class="marquee-inner" id="marquee-2">
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
+              <div class="marquee-text">ear (1)</div>
               <div class="marquee-text">ear (1)</div>
               <div class="marquee-text">ear (1)</div>
               <div class="marquee-text">ear (1)</div>
@@ -162,8 +178,20 @@
               <div class="marquee-text">ABOUT US</div>
               <div class="marquee-text">ABOUT US</div>
               <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
             </div>
             <div class="marquee-inner" id="marquee-2">
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
+              <div class="marquee-text">ABOUT US</div>
               <div class="marquee-text">ABOUT US</div>
               <div class="marquee-text">ABOUT US</div>
               <div class="marquee-text">ABOUT US</div>
@@ -222,7 +250,7 @@
               <i class="bx bx-chevron-down"></i>
             </div>
             <div class="footer__items">
-              <a href="#">ear (1)</a>
+              <a href="./src/pages/ear-one.html">ear (1)</a>
             </div>
           </li>
           <li class="footer__list">
@@ -231,7 +259,7 @@
               <i class="bx bx-chevron-down"></i>
             </div>
             <div class="footer__items">
-              <a href="#">About us</a>
+              <a href="./src/pages/about-us.html">About us</a>
             </div>
           </li>
           <li class="footer__list">
@@ -240,7 +268,7 @@
               <i class="bx bx-chevron-down"></i>
             </div>
             <div class="footer__items">
-              <a href="#">FAQ</a>
+              <a href="https://us.nothing.tech/pages/faq">FAQ</a>
             </div>
           </li>
           <li class="footer__list">
@@ -249,8 +277,16 @@
               <i class="bx bx-chevron-down"></i>
             </div>
             <div class="footer__items footer__items-app">
-              <a href="#" class="footer__app">Android</a>
-              <a href="#" class="footer__app">iOS</a>
+              <a
+                href="https://us.nothing.tech/pages/ear-1-app-download"
+                class="footer__app"
+                >Android</a
+              >
+              <a
+                href="https://apps.apple.com/app/id1568033706"
+                class="footer__app"
+                >iOS</a
+              >
             </div>
           </li>
         </ul>
@@ -299,16 +335,22 @@
 
         <!-- social media -->
         <div class="footer__socialmedia-container">
-          <a href="#" class="footer__socialmedia"
+          <a
+            href="https://www.instagram.com/nothing/?hl=en"
+            class="footer__socialmedia"
             ><i class="bx bxl-instagram"></i
           ></a>
-          <a href="#" class="footer__socialmedia"
+          <a
+            href="https://www.youtube.com/c/NothingTechnology"
+            class="footer__socialmedia"
             ><i class="bx bxl-youtube"></i
           ></a>
-          <a href="#" class="footer__socialmedia"
+          <a href="https://twitter.com/nothing" class="footer__socialmedia"
             ><i class="bx bxl-twitter"></i
           ></a>
-          <a href="#" class="footer__socialmedia"
+          <a
+            href="https://www.tiktok.com/@nothing.tech"
+            class="footer__socialmedia"
             ><i class="bx bxl-tiktok"></i
           ></a>
         </div>
