@@ -161,6 +161,7 @@ img {
   display: none;
   opacity: 0;
   transition: 0.3s ease;
+  z-index: -1;
 }
 
 .nav__menu {
@@ -192,6 +193,7 @@ img {
   display: inline-block;
   position: relative;
   opacity: 0.75;
+  color: var(--color-white);
 }
 
 .nav__link:hover {
@@ -251,6 +253,7 @@ img {
 .show__menu-shadow {
   opacity: 1;
   display: block;
+  z-index: 9;
 }
 
 /*===== Footer =====*/
