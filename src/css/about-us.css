@@ -1,0 +1,36 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*===== Colors =====*/
+  --color-white: #fff;
+  --color-light-gray: #565656;
+  --color-dark-gray: #181715;
+  --color-black: #000;
+  --color-red: #d21314;
+
+  /*===== Font Family =====*/
+  --font-body: 'Noto Sans Mono', monospace;
+  --font-dot: 'quaxiculo';
+  --font-bold: 'Fredoka One', cursive;
+
+  /*===== Font Weight =====*/
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  /*===== Font Size =====*/
+  --big-fs: 2rem; /* 32px */
+  --h1-fs: 1.5rem; /* 24px */
+  --h2-fs: 1.25rem; /* 20px */
+  --h3-fs: 1.125rem; /* 18px */
+  --normal-fs: 0.938rem; /* 15px */
+  --small-fs: 0.813rem; /* 13px */
+  --smaller-fs: 0.75rem; /* 12px */
+
+  /*===== z-index =====*/
+  --z-1: 1;
+  --z-10: 10;
+  --z-100: 100;
+}

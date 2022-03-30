@@ -1,40 +1,3 @@
-/*==================== VARIABLES CSS ====================*/
-:root {
-  /*===== Colors =====*/
-  --color-white: #fff;
-  --color-light-gray: #565656;
-  --color-dark-gray: #181715;
-  --color-black: #000;
-  --color-red: #d21314;
-
-  /*===== Font Family =====*/
-  --font-body: 'Noto Sans Mono', monospace;
-  --font-dot: 'quaxiculo';
-  --font-bold: 'Fredoka One', cursive;
-
-  /*===== Font Weight =====*/
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semi-bold: 600;
-  --fw-bold: 700;
-  --fw-extra-bold: 800;
-
-  /*===== Font Size =====*/
-  --big-fs: 2rem; /* 32px */
-  --h1-fs: 1.5rem; /* 24px */
-  --h2-fs: 1.25rem; /* 20px */
-  --h3-fs: 1.125rem; /* 18px */
-  --normal-fs: 0.938rem; /* 15px */
-  --small-fs: 0.813rem; /* 13px */
-  --smaller-fs: 0.75rem; /* 12px */
-
-  /*===== z-index =====*/
-  --z-1: 1;
-  --z-10: 10;
-  --z-100: 100;
-}
-
 /* ===== ear (1) product ===== */
 .main {
   width: 100vw;
@@ -321,7 +284,7 @@
 }
 
 .product__feature-title {
-  margin: 1rem;
+  margin: 4rem 1rem 1rem;
   font-family: var(--font-body);
   text-transform: uppercase;
   font-size: var(--big-fs);
@@ -329,7 +292,7 @@
 }
 
 .product__feature-accordion {
-  margin: 0 1rem 1rem;
+  margin: 0 1rem 4rem;
 }
 
 .accordion__item {
@@ -445,16 +408,205 @@
 /* For smaller devices */
 /* like Galaxy Fold */
 @media screen and (max-width: 350px) {
+  .product__swipe-text {
+    font-size: var(--smaller-fs);
+  }
+
+  .product__text {
+    font-size: var(--small-fs);
+  }
+
+  .detail-swiper-title {
+    font-size: var(--small-fs);
+  }
+
+  .detail-swiper-paragraph {
+    font-size: var(--smaller-fs);
+    font-weight: var(--fw-regular);
+  }
+
+  .product__feature-title {
+    font-size: var(--h1-fs);
+  }
+
+  .accordion__link {
+    font-size: var(--normal-fs);
+  }
+
+  .dimensions__title {
+    font-size: var(--normal-fs);
+  }
+
+  .standard {
+    font-size: var(--small-fs);
+  }
+
+  .value {
+    font-size: var(--small-fs);
+  }
 }
 
 /* For medium devices */
 /* 세로 */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 500px) {
+  .product__swiper {
+    height: 50%;
+  }
+
+  .image__one {
+    width: 60%;
+    position: absolute;
+    top: 3%;
+    left: 20%;
+  }
+
+  .image__two {
+    height: 25rem;
+    top: 10%;
+    right: 0%;
+  }
+
+  .image__three {
+    top: 15%;
+    left: 30%;
+    transform: scale(1.5);
+  }
+
+  .image__four {
+    object-position: 29% bottom;
+    height: 29rem;
+    top: 3%;
+    right: 0%;
+  }
 }
+
+@media screen and (min-width: 568px) {
+  .product__swiper {
+    height: 55%;
+  }
+}
+
 /* 가로 */
 @media screen and (min-width: 768px) {
+  .ear__description-detail {
+    height: 100vh;
+  }
+
+  .image__one {
+    top: 7%;
+  }
+
+  .image__two {
+    height: 38rem;
+  }
+
+  .image__three {
+    left: 35%;
+    transform: scale(1.6);
+  }
+
+  .image__four {
+    height: 40rem;
+    top: 7%;
+  }
+
+  .detail-swiper-text {
+    padding: 2rem 5rem;
+  }
+
+  .product__features {
+    padding: 0 8rem;
+  }
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .product__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product__swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .product__swiper-slide {
+    position: absolute;
+    top: -7%;
+  }
+
+  .product__text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: static;
+    gap: 1rem;
+    padding-right: 2rem;
+  }
+
+  .product__swipe-container {
+    position: absolute;
+    left: 25%;
+    bottom: 3.5rem;
+  }
+
+  .product__title {
+    font-size: var(--h1-fs);
+  }
+
+  .product__price {
+    font-size: var(--h3-fs);
+  }
+
+  .ear__description-detail {
+    height: 100%;
+  }
+
+  .detail-swiper-container {
+    max-width: 1024px;
+    width: 100%;
+    height: 65vh;
+    max-height: 65vh;
+    position: relative;
+  }
+
+  .detail-swiper-text {
+    width: 100%;
+  }
+
+  .image__one {
+    width: 40%;
+    left: 30%;
+  }
+
+  .image__two {
+    width: 100%;
+    height: 78%;
+  }
+
+  .image__three {
+    width: 65%;
+    left: 40%;
+  }
+
+  .image__four {
+    width: 100%;
+    height: 75%;
+  }
+
+  .product__features {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 3.5rem 8rem;
+  }
 }

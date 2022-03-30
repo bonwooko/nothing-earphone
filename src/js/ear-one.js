@@ -15,7 +15,7 @@ const whiteSwiper = new Swiper('.white__earphone', {
 const productButtons = document.querySelectorAll('.color__button');
 const blackButton = document.getElementById('button-black');
 const whiteButton = document.getElementById('button-white');
-const productContainer = document.querySelector('.product__container');
+const productContainer = document.querySelector('.ear__one-product');
 const blackEarphone = document.querySelector('.black__earphone');
 const whiteEarphone = document.querySelector('.white__earphone');
 const productTextColor = document.querySelector('.product__text-wrap');
@@ -44,6 +44,11 @@ whiteButton.addEventListener('click', () => {
 
 // ===== PRODUCT IMAGE SWIPER =====
 let detailSwiper = new Swiper('.description__detail-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -52,7 +57,6 @@ let detailSwiper = new Swiper('.description__detail-swiper', {
 
 // ===== PRODUCT FEATURE ACCORDION =====
 const featureLinks = document.querySelectorAll('.accordion__link');
-// const featureContents = document.querySelectorAll('.accordion__content');
 
 featureLinks.forEach((link) => {
   link.addEventListener('click', () => {
