@@ -34,7 +34,10 @@
   --z-10: 10;
   --z-100: 100;
 }
-
+.main {
+  width: 100vw;
+  overflow-x: hidden;
+}
 /* ===== ABOUT US MAIN ===== */
 .about__hero {
   /* border: 3px solid blue; */
@@ -159,36 +162,204 @@
 
 /* ===== ABOUT US ===== */
 .about__us {
-  border: 1px solid red;
-  padding: 1rem;
+  padding: 3rem 1rem;
+  width: 100%;
 }
-.about__us-container {
-  border: 1px solid blue;
-}
+
 .about__us-title {
-  border: 1px solid green;
   font-size: var(--h2-fs);
   padding: 1rem 0;
 }
-.about__us-paragraph-wrap {
-  border: 1px solid purple;
-}
+
 .about__us-paragraph {
-  border: 1px solid pink;
   margin-bottom: 2rem;
   line-height: 1.4;
   font-size: var(--small-fs);
 }
+
 .about__us-image {
-  border: 2px solid cyan;
   background-image: url(../../static/images/about-us-image.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 13rem;
+  margin-bottom: 2rem;
 }
 
 /* ===== OUR STORY ===== */
+.about__story {
+  margin-bottom: 4rem;
+}
 
-/*==================== MEDIA QUERIES ====================*/
+.about__story-title {
+  font-size: var(--h2-fs);
+  padding: 1rem 0 1rem 1rem;
+}
+
+.story__swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.story__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.story__slide-line {
+  border-top: 3px solid black;
+  width: 100%;
+  margin: 2rem;
+}
+.story__slide-circle {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+}
+.story__slide-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+.story__slide-title {
+  font-size: var(--h1-fs);
+  margin: 1rem 0;
+}
+.story__slide-paragraph {
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 1rem;
+}
+.swiper-horizontal .swiper-scrollbar {
+  position: absolute;
+  top: 86%;
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: var(--color-red);
+}
+.swiper .swiper-button-next {
+  position: absolute;
+  top: 94%;
+  left: 90%;
+}
+
+.swiper .swiper-button-prev {
+  position: absolute;
+  top: 94%;
+  left: 80%;
+}
+.swiper .swiper-button-next::after {
+  font-size: 0.7rem;
+  color: var(--color-black);
+}
+.swiper .swiper-button-prev::after {
+  font-size: 0.7rem;
+  color: var(--color-black);
+}
+.swiper .swiper-pagination-fraction {
+  width: fit-content;
+  bottom: 3%;
+  left: 1rem;
+  font-size: var(--h3-fs);
+}
+
+/* ===== INVESTORS ===== */
+.about__investors {
+  padding: 1rem;
+}
+.about__investors-title {
+  font-size: var(--h3-fs);
+  padding: 1rem 0;
+}
+
+.about__invest-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.about__invest-image {
+  width: 8rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#google {
+  background-image: url(../../static/images/gv.png);
+  background-color: #2e2e2e;
+  background-size: contain;
+}
+#steve {
+  background-image: url(../../static/images/steve.jpg);
+}
+#kevin {
+  background-image: url(../../static/images/kevin.jpg);
+}
+#josh {
+  background-image: url(../../static/images/josh.jpg);
+}
+#liam {
+  background-image: url(../../static/images/liam.jpg);
+}
+#paddy {
+  background-image: url(../../static/images/paddy.jpg);
+}
+#casey {
+  background-image: url(../../static/images/casey.jpg);
+}
+.about__invest-content {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 1.4;
+}
+.about__invest-name {
+  font-size: var(--normal-fs);
+}
+.about__invest-title {
+  font-size: var(--small-fs);
+}
+/* ===== SUSTAINABILITY ===== */
+.about__sustainability {
+  padding: 4rem 1rem;
+}
+
+.sustain__title {
+  font-size: var(--h3-fs);
+  padding: 1rem 0;
+}
+.sustain__image {
+  background-image: url(../../static/images/sustain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.sustain__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sustain__paragraph {
+  font-size: var(--normal-fs);
+  line-height: 1.4;
+}
+/*==================== MEDIA QUERIES ====================*/ ;

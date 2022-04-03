@@ -21,15 +21,25 @@
     <link rel="icon" href="../../static/favicon.ico" />
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/about-us.css" />
+    <link rel="stylesheet" href="../css/about-us.css?ver=1" />
     <!--========== Icon ==========-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <!--========== swiper.js ==========-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
     <!--========== JavaScript ==========-->
     <script defer type="module" src="../js/common.js"></script>
-    <script defer type="module" src="../js/about-us.js"></script>
+    <script defer type="module" src="../js/about-us.js?ver=1"></script>
     <title>NOTHING</title>
   </head>
 
@@ -136,12 +146,271 @@
         </div>
       </section>
 
-      <section class="about__story" id="about-story"></section>
-      <section class="about__investors" id="about-investors"></section>
-      <section
-        class="about__sustainability"
-        id="about-sustainability"
-      ></section>
+      <section class="about__story" id="about-story">
+        <h3 class="about__story-title">OUR STORY</h3>
+        <div class="swiper mySwiper story__swiper">
+          <div class="swiper-wrapper story__swiper-wrapper">
+            <!-- slide 1 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2020</h3>
+                <p class="story__slide-paragraph">
+                  This is where our journey began, where we pressed a giant
+                  reset button and founded Nothing.
+                </p>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2020</h3>
+                <p class="story__slide-paragraph">
+                  We raised $7m in seed financing from friends and investors who
+                  share our mission, including Tony Fadell, Casey Neistat, Kevin
+                  Lin and Steve Huffman.
+                </p>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2020</h3>
+                <p class="story__slide-paragraph">
+                  We unveiled Nothing's mission. To remove barriers between
+                  people and technology, and create a seamless digital future.
+                </p>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  GV joined the Nothing mission and invested $15 million in our
+                  Series A round, propelling us forward on our journey.
+                </p>
+              </div>
+            </div>
+            <!-- slide 5 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  We unveiled Teenage Engineering as a founding partner of
+                  Nothing, with Tom and Jesper being the visionaries behind our
+                  product designs.
+                </p>
+              </div>
+            </div>
+            <!-- slide 6 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  Our first community funding round only took 54 seconds, making
+                  it the fastest project to surpass $1M via crowdfunding in
+                  Europe.
+                </p>
+              </div>
+            </div>
+            <!-- slide 7 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  Concept 1 embodies our design principles, which have guided
+                  the development of our first products over the past several
+                  months.
+                </p>
+              </div>
+            </div>
+            <!-- slide 8 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  Mark your calendars. 27 July 2021 is the day we are unveiling
+                  ear (1).
+                </p>
+              </div>
+            </div>
+            <!-- slide 9 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  StockX sells the first our of 100 limited units of ear (1) for
+                  over 1,000 USD.
+                </p>
+              </div>
+            </div>
+            <!-- slide 10 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  This is it: ear (1) is here. Raw beauty meets precise sound
+                  for a pure sound experience.
+                </p>
+              </div>
+            </div>
+            <!-- slide 11 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  Nothing ear (1) is officially carbon neutral. This is just the
+                  start of our journey towards becoming a carbon neutral
+                  company.
+                </p>
+              </div>
+            </div>
+            <!-- slide 12 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2021</h3>
+                <p class="story__slide-paragraph">
+                  We teased, then introduced the ear (1) black edition.
+                  Accepting cryptocurrency payment become the first step into
+                  integrating Web3 in our future ecosystem. And our first ever
+                  pop-up retail space, the Nothing Kiosk, sprung up in the heart
+                  of London.
+                </p>
+              </div>
+            </div>
+            <!-- slide 13 -->
+            <div class="swiper-slide story__slide">
+              <div class="story__slide-line"></div>
+              <div class="story__slide-circle"></div>
+              <div class="story__slide-text">
+                <h3 class="story__slide-title">2022</h3>
+                <p class="story__slide-paragraph">
+                  Co-led by EQT Ventures and C Ventures, this funding will fuel
+                  the building of our product ecosystem. And it's also going to
+                  help grow our new London Design Hub, led by ex-Dyson Head of
+                  Design Adam Bates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="about__investors" id="about-investors">
+        <h3 class="about__investors-title">MEET THE INVESTORS</h3>
+        <div class="about__invest-wrap">
+          <!-- 1 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="google"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Google Ventures</h3>
+              <p class="about__invest-title">Series A Investor</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="steve"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Steve Huffman</h3>
+              <p class="about__invest-title">CEO and Co-founder of Reddit</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="kevin"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Kevin Lin</h3>
+              <p class="about__invest-title">Co-founder of Twitch</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="josh"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Josh Buckley</h3>
+              <p class="about__invest-title">CEO of Product Hunt</p>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="liam"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Liam Casey</h3>
+              <p class="about__invest-title">Founder and CEO, PCH</p>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="paddy"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Paddy Cosgrave</h3>
+              <p class="about__invest-title">Founder of Web Summit</p>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="about__invest-card">
+            <div class="about__invest-image" id="casey"></div>
+            <div class="about__invest-content">
+              <h3 class="about__invest-name">Casey Neistat</h3>
+              <p class="about__invest-title">YouTuber</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about__sustainability" id="about-sustainability">
+        <h3 class="sustain__title">SUSTAINABILITY</h3>
+        <div class="sustain__image"></div>
+        <div class="sustain__content">
+          <p class="sustain__paragraph">
+            Making better products is at the heart of our mission, and that
+            doesn’t just mean better looking or better to use. It means doing
+            better. And that starts with our first product, ear (1).
+          </p>
+          <p class="sustain__paragraph">
+            First, we worked with internationally recognised third parties to
+            assess ear (1)’s environmental impact. To completely neutralise its
+            1.78kg carbon footprint, we started by offsetting the electricity
+            used in the manufacturing process. Then, we purchased carbon credits
+            from Verified Carbon Standard (managed by Verra) – a globally
+            recognised standard for certifying carbon emissions reductions – to
+            offset the remaining emissions.
+          </p>
+          <p class="sustain__paragraph">
+            We want to keep going beyond having a carbon neutral product. This
+            is just the first step in our journey towards becoming a carbon
+            neutral company.
+          </p>
+        </div>
+      </section>
     </main>
 
     <!--========== Footer ==========-->
