@@ -512,56 +512,13 @@
   }
 
   .sticky {
-    display: grid;
-    grid-template-columns: 20rem 1024px;
-    grid-template-rows: auto auto auto auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    place-content: center;
+    max-width: 1024px;
+    width: 900px;
+    margin: 0 auto;
   }
 
   .about__aside {
-    grid-area: 1 / 1 / 5 / 2;
-    width: 100%;
-    position: static;
-    background-color: transparent;
-    padding-top: 5rem;
-  }
-
-  .about__aside-navigation {
-    border: none;
-    width: 100%;
-  }
-
-  .about__aside-title-wrap {
-    padding: 0 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .about__aside-title {
-    font-size: var(--h2-fs);
-  }
-
-  .about__aside-icon::before {
     display: none;
-  }
-
-  .about__aside-list {
-    height: auto;
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .about__aside-link {
-    margin-bottom: 1rem;
-  }
-
-  .about__aside-link:hover {
-    font-weight: var(--fw-bold);
-  }
-
-  .about__aside-link a {
-    color: var(--color-light-gray);
   }
 
   .about__us {
@@ -612,5 +569,62 @@
 
   .sustain__image {
     height: 35rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sticky {
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-content: center;
+    max-width: 1440px;
+  }
+
+  .about__aside {
+    display: block;
+    grid-area: 1 / 1 / 5 / 2;
+    width: 100%;
+    position: static;
+    background-color: transparent;
+    padding-top: 5rem;
+  }
+
+  .about__aside-navigation {
+    border: none;
+    width: 100%;
+  }
+
+  .about__aside-title-wrap {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about__aside-title {
+    font-size: var(--h2-fs);
+  }
+
+  .about__aside-icon::before {
+    display: none;
+  }
+
+  .about__aside-list {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .about__aside-link {
+    margin-bottom: 1rem;
+  }
+
+  .about__aside-link:hover {
+    font-weight: var(--fw-bold);
+  }
+
+  .about__aside-link a {
+    color: var(--color-light-gray);
   }
 }
