@@ -1,40 +1,3 @@
-/*==================== VARIABLES CSS ====================*/
-:root {
-  /*===== Colors =====*/
-  --color-white: #fff;
-  --color-light-gray: #565656;
-  --color-dark-gray: #181715;
-  --color-black: #000;
-  --color-red: #d21314;
-
-  /*===== Font Family =====*/
-  --font-body: 'Noto Sans Mono', monospace;
-  --font-dot: 'quaxiculo';
-  --font-bold: 'Fredoka One', cursive;
-
-  /*===== Font Weight =====*/
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semi-bold: 600;
-  --fw-bold: 700;
-  --fw-extra-bold: 800;
-
-  /*===== Font Size =====*/
-  --big-fs: 2rem; /* 32px */
-  --h1-fs: 1.5rem; /* 24px */
-  --h2-fs: 1.25rem; /* 20px */
-  --h3-fs: 1.125rem; /* 18px */
-  --normal-fs: 0.938rem; /* 15px */
-  --small-fs: 0.813rem; /* 13px */
-  --smaller-fs: 0.75rem; /* 12px */
-
-  /*===== z-index =====*/
-  --z-1: 1;
-  --z-10: 10;
-  --z-100: 100;
-}
-
 .main {
   max-width: 100%;
 }
@@ -268,6 +231,7 @@
 .swiper-horizontal .swiper-scrollbar {
   position: absolute;
   top: 86%;
+  margin: 0 auto;
 }
 
 .swiper-scrollbar .swiper-scrollbar-drag {
@@ -405,4 +369,248 @@
   font-size: var(--normal-fs);
   line-height: 1.4;
 }
-/*==================== MEDIA QUERIES ====================*/ ;
+
+/*==================== MEDIA QUERIES ====================*/
+/* For smaller devices */
+@media screen and (max-width: 350px) {
+  .about__invest-content {
+    width: 8rem;
+  }
+
+  .about__invest-name {
+    font-size: var(--small-fs);
+  }
+
+  .about__invest-title {
+    font-size: var(--smaller-fs);
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .about__us-image {
+    height: 20rem;
+  }
+
+  .about__us-paragraph {
+    font-size: var(--normal-fs);
+  }
+
+  .about__invest-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .about__invest-image {
+    width: 60%;
+  }
+
+  .about__invest-content {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__hero-title {
+    font-size: var(--big-fs);
+    width: 80%;
+    margin: 8rem auto 1rem;
+  }
+
+  .about__hero-line {
+    margin-left: calc(10% + 1rem);
+    margin-bottom: 1rem;
+  }
+
+  .about__hero-paragraph {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: var(--h2-fs);
+  }
+
+  .about__aside {
+    top: 0;
+  }
+
+  .about__us {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .about__story-title {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .story__slide-text {
+    width: 80%;
+  }
+
+  .swiper-horizontal .swiper-scrollbar {
+    right: 0;
+  }
+
+  .swiper-horizontal > .swiper-scrollbar {
+    max-width: 80%;
+  }
+
+  .swiper .swiper-button-next {
+    left: 87%;
+  }
+
+  .swiper .swiper-button-next::after {
+    font-size: 1rem;
+  }
+
+  .swiper .swiper-button-prev::after {
+    font-size: 1rem;
+  }
+
+  .swiper .swiper-pagination-fraction {
+    left: 10%;
+  }
+
+  .about__investors {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .about__sustainability {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .about__hero-text-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__hero-title {
+    margin: 2rem 0 1rem;
+    max-width: 1024px;
+    text-align: center;
+  }
+
+  .about__hero-line {
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .about__hero-paragraph {
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: var(--h2-fs);
+    text-align: center;
+  }
+
+  .sticky {
+    display: grid;
+    grid-template-columns: 20rem 1024px;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-content: center;
+  }
+
+  .about__aside {
+    grid-area: 1 / 1 / 5 / 2;
+    width: 100%;
+    position: static;
+    background-color: transparent;
+    padding-top: 5rem;
+  }
+
+  .about__aside-navigation {
+    border: none;
+    width: 100%;
+  }
+
+  .about__aside-title-wrap {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about__aside-title {
+    font-size: var(--h2-fs);
+  }
+
+  .about__aside-icon::before {
+    display: none;
+  }
+
+  .about__aside-list {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .about__aside-link {
+    margin-bottom: 1rem;
+  }
+
+  .about__aside-link:hover {
+    font-weight: var(--fw-bold);
+  }
+
+  .about__aside-link a {
+    color: var(--color-light-gray);
+  }
+
+  .about__us {
+    grid-area: 1 / 2 / 2 / 3;
+    max-width: 1024px;
+    margin: 5rem 0 10rem;
+    padding: 0 1rem;
+  }
+
+  .about__us-title {
+    padding-top: 0;
+  }
+
+  .about__us-image {
+    height: 35rem;
+  }
+
+  .about__story {
+    grid-area: 2 / 2 / 3 / 3;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+
+  .about__investors {
+    grid-area: 3 / 2 / 4 / 3;
+    max-width: 1024px;
+    width: 1024px;
+    margin-bottom: 10rem;
+  }
+
+  .about__invest-image {
+    width: 50%;
+    height: 18rem;
+  }
+
+  .about__invest-content {
+    margin: 0;
+    padding: 0;
+    width: 14rem;
+  }
+
+  .about__sustainability {
+    grid-area: 4 / 2 / 5 / 3;
+    max-width: 1024px;
+    margin-bottom: 10rem;
+  }
+
+  .sustain__image {
+    height: 35rem;
+  }
+}
