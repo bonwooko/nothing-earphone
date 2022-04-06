@@ -49,16 +49,6 @@
   border-top: 2px solid var(--color-white);
   width: 20%;
   margin-left: 1rem;
-  animation: lineAppear 1s linear;
-}
-
-@keyframes lineAppear {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
-  }
 }
 
 .about__hero-paragraph {

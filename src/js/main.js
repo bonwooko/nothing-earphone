@@ -2,9 +2,9 @@ import ScrollMagic from 'scrollmagic';
 import gsap from 'gsap';
 
 // Body animation with GSAP
-let timeLineTwo = gsap.timeline({ duration: 1.3, ease: 'power3.inOut' });
+let homePage = gsap.timeline({ duration: 1.3, ease: 'power3.inOut' });
 
-timeLineTwo
+homePage
   .from('.home__title', {
     opacity: 0,
   })
