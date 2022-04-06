@@ -1,3 +1,17 @@
+import gsap from 'gsap';
+
+// ========== Header animation ==========
+let timeLine = gsap.timeline({ duration: 1, ease: 'power3.inOut' });
+
+timeLine
+  .from('.nav__logo-text', {
+    opacity: 0,
+  })
+  .from('.nav__link', {
+    opacity: 0,
+    stagger: 0.2,
+  });
+
 // ========== Nav menu toggle ==========
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');

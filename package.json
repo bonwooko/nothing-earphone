@@ -28,6 +28,7 @@
     "not ie <= 10"
   ],
   "dependencies": {
-    "gsap": "^3.9.1"
+    "gsap": "^3.9.1",
+    "scrollmagic": "^2.0.8"
   }
 }
